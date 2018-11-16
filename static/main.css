@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    --main-color: steelblue;
+}
+body{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+header img{
+    display: block;
+    width: 100%;
+    height: 60%;
+}
+header h1{
+    text-align: center;
+    color:var(--main-color);
+    padding: 60px;
+    font-size: 1.8rem;
+}
+.main-nav{
+    display: flex;
+    background: steelblue;
+    justify-content: center;
+    padding: 6px 0;
+}
+.main-nav a{
+    text-decoration: none;
+    padding:6px 12px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.main-nav a:hover{
+    padding: 6px 12px;
+    background: lightgray;
+    color: steelblue;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    margin: 20px auto;
+}
+.book-review-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+.bookreview{
+    background: lightgray;
+    padding: 20px;
+}
+.br-title, .br-author, .post-date, .br-content{
+    padding: 10px 0;
+}
+.br-title{
+    color: var(--main-color);
+}
+.br-author{
+    font-style: italic;
+}
+.book-image{
+    display: block;
+    width: 100%;
+    max-width:300px;
+    margin: 10px 0;
+}
+.book-details{
+    border: 1px solid green;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    padding: 6px;
+    background: steelblue;
+    margin: 20px 0;
+    color: white;
+}
