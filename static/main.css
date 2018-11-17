@@ -99,8 +99,10 @@ a{
     max-width:300px;
     margin: 10px 0;
 }
-.book-details{
+.review-item-details{
     background: rgb(248, 248, 239);
+    padding: 10px 0;
+    margin: 20px 0;
 }
 .book-title{
     color: var(--main-color);
