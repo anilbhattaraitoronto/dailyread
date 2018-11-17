@@ -63,10 +63,12 @@ a{
     background: lightgray;
     max-width: 600px;
     margin: 10px auto;
+    border: 1px solid var(--main-color);
 }
 .list-image{
     grid-area: 1/1/span 4/span 1;
     max-width: 100%;
+    max-height: 100%;
     margin-right: 10px;
 }
 .post .title{
@@ -82,7 +84,7 @@ a{
     grid-area: 4/2/ span 1/ span 1;
 }
 
-.title, .author, .post-date, .content{
+.title, .author, .post-date, .content, .list-image{
     padding: 10px 0;
 }
 .title{
@@ -107,11 +109,13 @@ a{
 }
 .sidebar, .contact{
     background: lightgray;
+    border: 1px solid var(--main-color);
     max-width: 600px;
     margin: 20px auto;
 }
 .sidebar .title, .contact .title{
     text-align: center;
+    color: var(--main-color);
 }
 footer{
     text-align: center;
