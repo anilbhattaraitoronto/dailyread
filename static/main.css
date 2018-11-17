@@ -106,8 +106,10 @@ a{
 }
 .book-title{
     color: var(--main-color);
-    
-
+}
+.fullpost{
+    width: 80%;
+    margin: 0 auto;
 }
 .sidebar, .contact{
     /* background: lightgray; */
@@ -126,7 +128,7 @@ footer{
     margin: 20px 0;
     color: white;
 }
-@media only screen and (max-width: 512px){
+@media only screen and (max-width: 356px){
     .main-nav{
         flex-direction: column;
         padding-left: 0;
