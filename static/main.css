@@ -10,20 +10,28 @@ body{
 }
 header img{
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 60%;
 }
 header h1{
-    text-align: center;
     color:var(--main-color);
-    padding: 60px;
+    padding: 60px 20px;
     font-size: 1.8rem;
+    text-align: center;
+}
+header h1::after{
+    content:"Simplifying Academic Writings On Nepal For Everyone";
+    display: block;
+    font-size: .8rem;
+    color: olive;
+    font-style: italic;
+    padding-top: 20px;
 }
 .main-nav{
     display: flex;
-    background: steelblue;
     justify-content: center;
-    padding: 6px 0;
+    background: steelblue;
+    padding: 6px 12px;
 }
 .main-nav a{
     text-decoration: none;
@@ -38,39 +46,72 @@ a{
     background: lightgray;
     color: steelblue;
 }
-
+.toggle-link{
+    display: none;
+}
 .wrapper{
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin: 20px auto;
 }
-.book-review-list{
+
+.post{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    background: lightgray;
+    max-width: 600px;
+    margin: 10px auto;
 }
-.bookreview{
-    background: rgb(230, 224, 224);
-    padding: 20px;
+.list-image{
+    grid-area: 1/1/span 4/span 1;
+    max-width: 100%;
+    margin-right: 10px;
 }
-.br-title, .br-author, .post-date, .br-content{
+.post .title{
+    grid-area: 1/2/span 1/ span 1;
+}
+.post .author{
+    grid-area: 2/2/ span 1/span 1;
+}
+.post .post-date{
+    grid-area: 3/2/ span 1/ span 1;
+}
+.post .first-para{
+    grid-area: 4/2/ span 1/ span 1;
+}
+
+.title, .author, .post-date, .content{
     padding: 10px 0;
 }
-.br-title{
+.title{
     color: var(--main-color);
 }
-.br-author{
+.author{
     font-style: italic;
 }
 .book-image{
     display: block;
-    width: 100%;
+    max-width: 100%;
     max-width:300px;
     margin: 10px 0;
 }
 .book-details{
-    border: 1px solid green;
-    padding: 10px;
+    background: rgb(248, 248, 239);
+}
+.book-title{
+    color: var(--main-color);
+    
+
+}
+.sidebar, .contact{
+    background: lightgray;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.sidebar .title, .contact .title{
+    text-align: center;
 }
 footer{
     text-align: center;
@@ -78,4 +119,41 @@ footer{
     background: steelblue;
     margin: 20px 0;
     color: white;
+}
+@media only screen and (max-width: 512px){
+    .main-nav{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .nav-link{
+        display: none;
+    }
+    .toggle-link{
+        display: inline-block;
+        color: white;
+        padding-left: 12px;
+    }
+    .show-link{
+        display: initial;
+        padding: 12px 0;
+    }
+}
+@media only screen and (min-width: 900px){
+    main{
+        display: grid;
+        grid-template-columns: 200px 2fr 200px;
+        grid-gap: 10px;
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+    .contact{
+        grid-area: 1/3/span 1/span 1;
+        background: lightgray;
+        margin: 10px 0;
+    }
+    .sidebar{
+        grid-area: 1/1/span 1/ span 1;
+        background: lightgray;
+        margin: 10px 0;
+    }
 }
