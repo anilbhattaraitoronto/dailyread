@@ -50,7 +50,7 @@ a{
     grid-gap: 10px;
 }
 .bookreview{
-    background: lightgray;
+    background: rgb(230, 224, 224);
     padding: 20px;
 }
 .br-title, .br-author, .post-date, .br-content{
