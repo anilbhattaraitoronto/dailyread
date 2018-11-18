@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    --main-color: steelblue;
+    --main-color: cadetblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.6;
 }
@@ -32,7 +32,7 @@ header h1::after{
 .main-nav{
     display: flex;
     justify-content: center;
-    background: steelblue;
+    background: var(--main-color);
     padding: 6px 12px;
 }
 .main-nav a{
@@ -52,8 +52,8 @@ a{
     display: none;
 }
 .wrapper{
-    width: 90%;
-    margin: 40px auto;
+    width: 95%;
+    margin: 60px auto;
 }
 
 .post{
@@ -61,7 +61,6 @@ a{
     grid-column-gap: 20px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    /* background: rgb(243, 240, 240); */
     margin: 10px auto;
     padding-right: 10px;
 }
@@ -73,8 +72,7 @@ a{
 }
 .list-image{
     grid-area: 1/1/span 4/span 1;
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 90%;
 }
 .post .title{
     grid-area: 2/2/span 1/ span 1;
@@ -111,7 +109,7 @@ a{
     margin: 60px auto;
 }
 .sidebar{
-    background: rgb(243, 240, 240);
+    /* background: rgb(243, 240, 240); */
     padding: 0 10px 10px 10px;
     margin: 20px auto;
 }
@@ -126,7 +124,7 @@ a{
 footer{
     text-align: center;
     padding: 6px;
-    background: steelblue;
+    background: var(--main-color);
     margin: 40px 0;
     color: white;
 }
@@ -158,7 +156,7 @@ footer{
 @media only screen and (min-width: 900px){
     .wrapper{
         width: 90%;
-        margin: 0px auto;
+        margin: 60px auto;
     }
     .wrapper{
         display: grid;
