@@ -70,7 +70,8 @@ a{
 }
 .list-image{
     grid-area: 1/1/span 4/span 1;
-    max-width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 .post .title{
     grid-area: 2/2/span 1/ span 1;
@@ -86,10 +87,11 @@ a{
 }
 .review-item-details{
     grid-area: 5/1/span 1/ span 1;
+    padding-top: 10px;
 }
 
-.title, .author, .post-date, .first-para, .item-title, .item-author, .publisher, .publication-year{
-    /* padding: 2px 0; */
+.title, .author, .post-date, .first-para{
+    padding: 10px 0;
 }
 .title, .item-title{
     color: var(--main-color);
@@ -97,13 +99,12 @@ a{
 .author, .item-author{
     font-style: italic;
 }
-
-.book-title{
-    color: var(--main-color);
+.item-title, .item-author, .publisher, .publication-year{
+    padding: 3px 0;
 }
 .fullpost{
     width: 80%;
-    margin: 20px auto;
+    margin: 60px auto;
 }
 .sidebar{
     background: rgb(243, 240, 240);
@@ -111,7 +112,8 @@ a{
     margin: 20px auto;
 }
 .sidebar .title, .contact .title{
-    color: darkcyan;
+    color: darkolivegreen;
+    font-size: 1.2rem;
 }
 .sidebar p, .contact p{
     padding: 10px 0;
