@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     --main-color: steelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
     width: 95%;
@@ -50,82 +51,77 @@ a{
     display: none;
 }
 .wrapper{
-    width: 100%;
-    margin: 20px auto;
+    width: 90%;
+    margin: 40px auto;
 }
 
 .post{
     display: grid;
-    grid-gap: 10px;
+    grid-column-gap: 20px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    background: lightgray;
-    max-width: 600px;
+    /* background: rgb(243, 240, 240); */
     margin: 10px auto;
-    border: 1px solid var(--main-color);
-    box-shadow: 2px 2px 8px lavender;
+    padding-right: 10px;
+}
+.post-type{
+    grid-area: 1/2 span 1/ span1;
+    font-style: italic;
 }
 .list-image{
     grid-area: 1/1/span 4/span 1;
-    max-width: 100%;
-    max-height: 100%;
-    margin-right: 10px;
+    max-width: 95%;
 }
 .post .title{
-    grid-area: 1/2/span 1/ span 1;
+    grid-area: 2/2/span 1/ span 1;
 }
 .post .author{
-    grid-area: 2/2/ span 1/span 1;
+    grid-area: 3/2/ span 1/span 1;
 }
 .post .post-date{
-    grid-area: 3/2/ span 1/ span 1;
-}
-.post .first-para{
     grid-area: 4/2/ span 1/ span 1;
 }
-
-.title, .author, .post-date, .first-para, .list-image{
-    padding: 10px 0;
-}
-.title{
-    color: var(--main-color);
-}
-.author{
-    font-style: italic;
-}
-.book-image{
-    display: block;
-    max-width: 100%;
-    max-width:300px;
-    margin: 10px 0;
+.post .first-para{
+    grid-area: 5/2/ span 1/ span 1;
 }
 .review-item-details{
-    background: rgb(248, 248, 239);
-    padding: 10px 0;
-    margin: 20px 0;
+    grid-area: 5/1/span 1/ span 1;
 }
+
+.title, .author, .post-date, .first-para, .item-title, .item-author, .publisher, .publication-year{
+    /* padding: 2px 0; */
+}
+.title, .item-title{
+    color: var(--main-color);
+}
+.author, .item-author{
+    font-style: italic;
+}
+
 .book-title{
     color: var(--main-color);
 }
 .fullpost{
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
-.sidebar, .contact{
-    /* background: lightgray; */
-    border: 1px solid var(--main-color);
-    max-width: 600px;
+.sidebar{
+    background: rgb(243, 240, 240);
+    padding: 0 10px 10px 10px;
     margin: 20px auto;
 }
 .sidebar .title, .contact .title{
-    text-align: center;
-    color: var(--main-color);
+    color: darkcyan;
 }
+.sidebar p, .contact p{
+    padding: 10px 0;
+}
+
 footer{
     text-align: center;
     padding: 6px;
     background: steelblue;
-    margin: 20px 0;
+    margin: 40px 0;
     color: white;
 }
 @media only screen and (max-width: 356px){
@@ -152,13 +148,13 @@ footer{
 }
 @media only screen and (min-width: 900px){
     .wrapper{
-        width: 100%;
+        width: 90%;
         margin: 0px auto;
     }
-    main{
+    .wrapper{
         display: grid;
-        grid-template-columns: 200px 2fr 200px;
-        grid-gap: 10px;
+        grid-template-columns: 250px 2fr;
+        grid-gap: 20px;
         max-width: 1000px;
         margin: 20px auto;
     }
