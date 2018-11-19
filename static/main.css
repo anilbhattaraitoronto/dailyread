@@ -24,7 +24,7 @@ header h1{
 header h1::after{
     content:"Simplifying Academic Writings For Everyone";
     display: block;
-    font-size: .8rem;
+    font-size: .7rem;
     color: olive;
     font-style: italic;
     padding-top: 20px;
@@ -34,6 +34,8 @@ header h1::after{
     justify-content: center;
     background: var(--main-color);
     padding: 6px 12px;
+    position: sticky;
+    top: 0;
 }
 .main-nav a{
     text-decoration: none;
@@ -76,7 +78,7 @@ a{
     width: 80px;
 }
 .list-image:hover{
-    width: 150px;
+    width: 120px;
 }
 .post .title{
     grid-area: 2/2/span 1/ span 1;
