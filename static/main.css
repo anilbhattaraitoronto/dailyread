@@ -22,7 +22,7 @@ header h1{
     text-align: center;
 }
 header h1::after{
-    content:"Simplifying Academic Writings On Nepal For Everyone";
+    content:"Simplifying Academic Writings For Everyone";
     display: block;
     font-size: .8rem;
     color: olive;
@@ -107,6 +107,9 @@ a{
 .fullpost{
     width: 80%;
     margin: 60px auto;
+}
+.fullpost p{
+    padding: 10px 0px;
 }
 .sidebar{
     /* background: rgb(243, 240, 240); */
