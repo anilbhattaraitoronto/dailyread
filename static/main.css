@@ -33,7 +33,7 @@ header h1::after{
     display: flex;
     justify-content: center;
     background: var(--main-color);
-    padding: 6px 12px;
+    padding: 5px 12px;
     position: sticky;
     top: 0;
 }
@@ -50,6 +50,10 @@ a{
     background: lightgray;
     color: steelblue;
 }
+.main-nav a:active{
+    background-color:lightgray;
+    color: steelblue;
+}
 .toggle-link{
     display: none;
 }
@@ -60,10 +64,10 @@ a{
 
 .post{
     display: grid;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    margin: 10px auto;
+    margin-bottom: 10px;
     padding-right: 10px;
     background: rgb(247, 242, 242);
 }
@@ -71,7 +75,7 @@ a{
     grid-area: 1/2 span 1/ span1;
     font-style: italic;
     color: rgb(187, 101, 3);
-    font-size: .9rem;
+    font-size: .8rem;
 }
 .list-image{
     grid-area: 1/1/span 4/span 1;
@@ -103,6 +107,9 @@ a{
 .title, .item-title{
     color: var(--main-color);
 }
+.title{
+    font-size: 1.3rem;
+}
 .author, .item-author{
     font-style: italic;
     color: darkolivegreen;
@@ -117,6 +124,15 @@ a{
 .fullpost p{
     padding: 10px 0px;
 }
+.main-content{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.main-content .post{
+    padding: 10px;
+}
+
 .sidebar{
     /* background: rgb(243, 240, 240); */
     padding: 0 10px 10px 10px;
@@ -134,7 +150,7 @@ footer{
     text-align: center;
     padding: 6px;
     background: var(--main-color);
-    margin: 40px 0;
+    margin: 0 auto;
     color: white;
 }
 @media only screen and (max-width: 512px){
