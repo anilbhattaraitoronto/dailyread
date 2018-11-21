@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    --main-color: cadetblue;
+    --main-color: rgb(5, 113, 139);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 body{
     width: 95%;
@@ -13,7 +13,6 @@ body{
 header img{
     display: block;
     max-width: 100%;
-    height: 60%;
 }
 header h1{
     color:var(--main-color);
@@ -29,6 +28,7 @@ header h1::after{
     font-style: italic;
     padding-top: 20px;
 }
+
 .main-nav{
     display: flex;
     justify-content: center;
@@ -44,6 +44,11 @@ header h1::after{
 }
 a{
     text-decoration: none;
+}
+.read-more-arrow{
+    float: right;
+    background: lightgray;
+    padding: 0 10px;
 }
 .main-nav a:hover{
     padding: 6px 12px;
@@ -65,23 +70,25 @@ a{
 .post{
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto;
-    margin-bottom: 10px;
-    padding-right: 10px;
-    background: rgb(247, 242, 242);
+    padding-bottom: 16px;
+    /* background: rgb(247, 242, 242); */
+    border-bottom: 1px solid lightgray;
 }
 .post-type{
     grid-area: 1/2 span 1/ span1;
     font-style: italic;
     color: rgb(187, 101, 3);
     font-size: .8rem;
+    padding-top: 10px;
+    text-decoration: underline;
 }
-.list-image{
+.item-image{
     grid-area: 1/1/span 4/span 1;
     width: 60px;
 }
-.list-image:hover{
+.item-image:hover{
     width: 120px;
 }
 .post .title{
@@ -99,6 +106,8 @@ a{
 .review-item-details{
     grid-area: 5/1/span 1/ span 1;
     padding-top: 10px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 .title, .author, .post-date, .first-para{
@@ -126,27 +135,27 @@ a{
 }
 .main-content{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .main-content .post{
     padding: 10px;
 }
-
 .sidebar{
-    /* background: rgb(243, 240, 240); */
-    padding: 0 10px 10px 10px;
-    margin: 20px auto;
+    background: rgb(248, 245, 245);
+    padding: 0 10px;
+    font-size: 92%;
 }
-.sidebar .title, .contact .title{
+.sidebar .title{
     color: darkolivegreen;
     font-size: 1.2rem;
 }
 .sidebar p, .contact p{
     padding: 10px 0;
 }
-
 footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-align: center;
     padding: 6px;
     background: var(--main-color);
