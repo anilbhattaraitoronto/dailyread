@@ -34,6 +34,7 @@ header h1::after{
     justify-content: center;
     background: var(--main-color);
     padding: 5px 12px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
