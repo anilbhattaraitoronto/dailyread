@@ -10,10 +10,6 @@ body{
     margin: 0 auto;
     max-width: 1000px;
 }
-header img{
-    display: block;
-    max-width: 100%;
-}
 header h1{
     color:var(--main-color);
     padding: 60px 20px;
@@ -28,19 +24,18 @@ header h1::after{
     font-style: italic;
     padding-top: 20px;
 }
-
 .main-nav{
     display: flex;
     justify-content: center;
     background: var(--main-color);
-    padding: 5px 12px;
+    padding: 4px 12px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 .main-nav a{
     text-decoration: none;
-    padding:6px 12px;
+    padding:7px 12px;
     color: white;
 }
 a{
@@ -52,12 +47,8 @@ a{
     padding: 0 10px;
 }
 .main-nav a:hover{
-    padding: 6px 12px;
+    padding: 7px 12px;
     background: lightgray;
-    color: steelblue;
-}
-.main-nav a:active{
-    background-color:lightgray;
     color: steelblue;
 }
 .toggle-link{
@@ -67,14 +58,12 @@ a{
     width: 95%;
     margin: 60px auto;
 }
-
 .post{
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: auto;
     padding-bottom: 16px;
-    /* background: rgb(247, 242, 242); */
     border-bottom: 1px solid lightgray;
 }
 .post-type{
@@ -87,6 +76,9 @@ a{
 }
 .item-image{
     grid-area: 1/1/span 4/span 1;
+    width: 60px;
+}
+.book-cover{
     width: 60px;
 }
 .item-image:hover{
@@ -190,13 +182,10 @@ footer{
         font-size: 2.5rem;
     }
     .wrapper{
-        width: 90%;
-        margin: 60px auto;
-    }
-    .wrapper{
         display: grid;
         grid-template-columns: 250px 2fr;
         grid-gap: 20px;
+        width: 90%;
         max-width: 1000px;
         margin: 60px auto;
     }

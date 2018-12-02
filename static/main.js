@@ -5,4 +5,3 @@ toggleLink.addEventListener('click', function (event) {
         link.classList.toggle('show-link');
     })
 })
-
